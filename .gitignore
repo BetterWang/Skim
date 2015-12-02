@@ -1,1 +1,4 @@
 *.root
+*.pyc
+crab.log
+CrabArea/
