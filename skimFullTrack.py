@@ -11,7 +11,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_data_HIon', '')
 
 process.source = cms.Source ("PoolSource",
                              fileNames = cms.untracked.vstring(
-                                     'file:0A63BE1C-3799-E511-A0A0-02163E0142CA.root' #HIMinimumBias2
+                                     'file:HardProbe1.root'
 #                                     'file:../tmp/AOD/12336140-3999-E511-8C97-02163E01439B.root' #HIMinimumBias1
 #                                     '/store/express/HIRun2015/HIExpressPhysics/FEVT/Express-v1/000/262/921/00000/FC979710-9097-E511-A28B-02163E013523.root'
                              )
@@ -25,8 +25,7 @@ import HLTrigger.HLTfilters.hltHighLevel_cfi
 
 process.hltFilter = HLTrigger.HLTfilters.hltHighLevel_cfi.hltHighLevel.clone()
 process.hltFilter.HLTPaths = [
-                "HLT_HIL1MinimumBiasHF1AND_v*",
-                "HLT_HIL1MinimumBiasHF2AND_v*",
+                "HLT_HIFullTrack*",
 ]
 
 
@@ -55,7 +54,7 @@ import EventContent
 process.Out = cms.OutputModule("PoolOutputModule",
                                SelectEvents = cms.untracked.PSet(SelectEvents = cms.vstring('p')),
                                outputCommands = EventContent.analysisSkimContent.outputCommands,
-                               fileName = cms.untracked.string ("HIMB2.root"),
+                               fileName = cms.untracked.string ("FullTrack.root"),
                               )
 
 process.out = cms.EndPath(process.Out)
