@@ -24,6 +24,7 @@ analysisSkimContent = cms.PSet(
 
         # vertex
         'keep *_hiSelectedVertex_*_*',
+        'keep *_hiClusterCompatibility_*_*',
 
         # full tracks
         'keep recoTracks_hiGeneralTracks_*_*',

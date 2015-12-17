@@ -51,6 +51,8 @@ process.p = cms.Path(
 
 import EventContent
 
+EventContent.analysisSkimContent.outputCommands.append('keep *_particleFlowTmp_*_*')
+
 process.Out = cms.OutputModule("PoolOutputModule",
                                SelectEvents = cms.untracked.PSet(SelectEvents = cms.vstring('p')),
                                outputCommands = EventContent.analysisSkimContent.outputCommands,

@@ -11,7 +11,7 @@ process.MessageLogger.cerr.FwkReport.reportEvery = 100
 
 process.source = cms.Source ("PoolSource",
                              fileNames = cms.untracked.vstring(
-                                     '/store/express/HIRun2015/HIExpressPhysics/FEVT/Express-v1/000/262/921/00000/FC979710-9097-E511-A28B-02163E013523.root'
+                                     '/store/express/HIRun2015/HIExpressPhysics/FEVT/Express-v1/000/262/921/00000/FC48569A-9697-E511-A314-02163E0145DF.root'
                              )
                             )
 
