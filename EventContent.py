@@ -28,6 +28,9 @@ analysisSkimContent = cms.PSet(
 
         # full tracks
         'keep recoTracks_hiGeneralTracks_*_*',
+
+        # pf
+        'keep *_particleFlowTmp__*',
         )
 )
 
