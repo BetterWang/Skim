@@ -35,3 +35,11 @@ analysisSkimContent = cms.PSet(
 )
 
 
+analysisSkimQ2Debug = cms.PSet(
+        outputCommands = cms.untracked.vstring(
+        'drop *',
+        'keep *_hiEvtPlane_*_*',
+        'keep *_centralityBin_*_*',
+        'keep *_TriggerResults_*_*',
+	)
+)
